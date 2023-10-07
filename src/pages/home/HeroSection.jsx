@@ -1,21 +1,10 @@
 import { useLayoutEffect, useState } from "react";
 import slider from "../../data/slider.json";
+import useDisplay from "../../hooks/useDisplay";
 
 const HeroSection = () => {
   const [activeSlide, setActiveSlide] = useState({ start: 0, end: 1 });
-
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  console.log(windowWidth);
-
-  useLayoutEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const [windowWidth] = useDisplay();
 
   useLayoutEffect(() => {
     if (windowWidth > 770) {
