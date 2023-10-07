@@ -1,8 +1,30 @@
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import slider from "../../data/slider.json";
 
 const HeroSection = () => {
-  const [activeSlide, setActiveSlide] = useState({ start: 0, end: 2 });
+  const [activeSlide, setActiveSlide] = useState({ start: 0, end: 1 });
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  console.log(windowWidth);
+
+  useLayoutEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useLayoutEffect(() => {
+    if (windowWidth > 770) {
+      setActiveSlide({ start: 0, end: 2 });
+    }
+    if (windowWidth < 770) {
+      setActiveSlide({ start: 0, end: 1 });
+    }
+  }, [windowWidth]);
 
   const handleSliderNext = () => {
     if (slider.length > activeSlide.end) {
@@ -25,20 +47,19 @@ const HeroSection = () => {
   };
 
   return (
-    <div className=" bg-cb h-screen w-full flex  items-center">
-      <div className=" container mx-auto flex justify-between items-center">
-        <div className="w-[650px]">
-          <h1 className=" text-6xl font-bold text-white ">
+    <div className=" bg-cb md:h-screen w-full flex  items-center px-5 xl:px-0 py-20 md:py-0 pt-36 md:pt-0">
+      <div className=" container mx-auto flex flex-col md:flex-row justify-between items-center ">
+        <div className="md:w-[450px] xl:w-[550px] 2xl:w-[650px]">
+          <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white ">
             Let's Celebrate Your
             <span className="text-bg"> Social Events</span> With Us
           </h1>
-          <p className=" text-zinc-400 my-3">
+          <p className=" text-zinc-400 my-3  text-sm xl:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            ad minim veniam.
           </p>
-          <div className="flex justify-start items-center text-zinc-300 mt-10 gap-10">
+          <div className="flex justify-center md:justify-start  items-center text-zinc-300 mt-10 gap-10 mb-10 md:-mb-0 text-center">
             <button
               onClick={handleSliderPrev}
               className=" border-[2px] border-zinc-300 p-2 rounded-full ">
@@ -83,10 +104,14 @@ const HeroSection = () => {
             .slice(activeSlide.start, activeSlide.end)
             ?.map((slide, index) => (
               <div className=" relative" key={index}>
-                <img src={slide.img} alt="" className=" h-[600px] w-[400px]" />
+                <img
+                  src={slide.img}
+                  alt=""
+                  className="w-[270px] lg:w-[240px] xl:w-[300px] h-[400px] xl:h-[500px] 2xl:h-[600px] 2xl:w-[400px]"
+                />
                 <div className=" absolute top-0 left-0 w-full h-full bg-slider"></div>
-                <div className=" absolute bottom-12 left-0 w-full flex items-center justify-center">
-                  <h1 className=" text-3xl text-white logo-text">
+                <div className=" absolute bottom-12 left-0 w-full flex items-center justify-center text-center">
+                  <h1 className=" text-xl xl:text-3xl text-white logo-text text-center">
                     {slide.name}
                   </h1>
                 </div>
