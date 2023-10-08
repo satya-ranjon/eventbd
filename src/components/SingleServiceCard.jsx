@@ -1,13 +1,23 @@
 import PropTypes from "prop-types";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const SingleServiceCard = ({ service }) => {
   const { id, name, price, description, img } = service || {};
+  const { pathname } = useLocation();
+
   return (
     <div className=" rounded-xl overflow-hidden" key={id}>
       <div className="relative">
-        <img src={img} alt={name} className=" h-[300px] w-full" />
+        <img
+          src={img}
+          alt={name}
+          className={`${
+            pathname.includes("/service/")
+              ? "h-[230px] md:h-[200px] lg:h-[250px]"
+              : "h-[300px]"
+          } w-full`}
+        />
         <div className=" absolute bg-slider top-0 left-0 right-0 bottom-0"></div>
         <div className=" absolute bottom-8 rounded-md left-8 p-2  font-semibold text-sm bg-[#4b297b]">
           <span className="">
@@ -58,9 +68,9 @@ const SingleServiceCard = ({ service }) => {
 
 SingleServiceCard.propTypes = {
   service: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     name: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
+    price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     description: PropTypes.arrayOf(
       PropTypes.shape({
         description: PropTypes.string.isRequired,

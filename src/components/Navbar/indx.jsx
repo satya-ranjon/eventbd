@@ -1,10 +1,17 @@
 import { images } from "../../constant";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import useDisplay from "../../hooks/useDisplay";
 import { useLayoutEffect, useState } from "react";
 
+const menu = [
+  { link: "/", label: "Home" },
+  { link: "/services", label: "Services" },
+  { link: "/about", label: "About Us" },
+  { link: "/login", label: "Login" },
+];
+
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [windowWidth, scrollY] = useDisplay();
 
   useLayoutEffect(() => {
@@ -13,11 +20,17 @@ const Navbar = () => {
     }
   });
 
+  const handleNavbar = () => {
+    setIsOpen((prev) => !prev);
+  };
+
+  const { pathname } = useLocation();
+
   return (
     <div
-      className={`fixed top-0 left-0 right-0 w-full ${
-        scrollY > 30 && "bg-2cb z-10"
-      }`}>
+      className={`${pathname === "/" && "fixed top-0 left-0 right-0"} w-full ${
+        scrollY > 30 && pathname === "/" && "bg-2cb z-10"
+      } ${pathname != "/" && "bg-2cb"}`}>
       <div className="px-5 xl:px-0 ">
         <div className="flex justify-between items-center container mx-auto py-10 text-white">
           {/* // Logo */}
@@ -31,7 +44,7 @@ const Navbar = () => {
           </div>
 
           {isOpen ? (
-            <button className="md:hidden" onClick={() => setIsOpen(false)}>
+            <button className="md:hidden" onClick={handleNavbar}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -47,7 +60,7 @@ const Navbar = () => {
               </svg>
             </button>
           ) : (
-            <button className="md:hidden" onClick={() => setIsOpen(true)}>
+            <button className="md:hidden" onClick={handleNavbar}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -69,28 +82,18 @@ const Navbar = () => {
               className={`${
                 windowWidth < 600 &&
                 "absolute top-24 left-0   flex-col w-full bg-[#20245c] p-3  justify-start items-center "
-              } gap-5 flex`}>
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  `${isActive && " text-bg"} font-semibold text-xl`
-                }>
-                Home
-              </NavLink>
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  `${isActive && " text-bg"} font-semibold text-xl`
-                }>
-                About Us
-              </NavLink>
-              <NavLink
-                to="/login"
-                className={({ isActive }) =>
-                  `${isActive && " text-bg"} font-semibold text-xl`
-                }>
-                Login
-              </NavLink>
+              } gap-5 flex z-10`}>
+              {menu.map((item) => (
+                <NavLink
+                  onClick={windowWidth < 600 && handleNavbar}
+                  key={item.link}
+                  to={item.link}
+                  className={({ isActive }) =>
+                    `${isActive && " text-bg"} font-semibold text-xl`
+                  }>
+                  {item.label}
+                </NavLink>
+              ))}
             </div>
           )}
         </div>

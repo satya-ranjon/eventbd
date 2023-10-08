@@ -19,8 +19,8 @@ const AllServices = ({ show, label }) => {
         )}
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 mt-20 ">
-        {services.slice(0, showServices).map((item) => (
-          <SingleServiceCard service={item} key={item.id} />
+        {services.slice(0, showServices).map((item, i) => (
+          <SingleServiceCard service={item} key={i} />
         ))}
       </div>
     </>
