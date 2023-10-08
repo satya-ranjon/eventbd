@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import SocialLogin from "./SocialLogin";
 
-const Form = ({ btnLabel, handleSubmit, clearInput = false }) => {
+const Form = ({ btnLabel, handleSubmit, success = false, error }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -12,13 +12,16 @@ const Form = ({ btnLabel, handleSubmit, clearInput = false }) => {
   };
 
   useEffect(() => {
-    if (clearInput) {
+    if (success) {
+      console.log(success);
       setEmail("");
-      clearInput("");
+      setPassword("");
     }
-  }, [clearInput]);
+  }, [success]);
   return (
     <>
+      <div className=" h-6 text-red-400">{error}</div>
+
       <form
         onSubmit={handleFormData}
         className="space-y-6"
@@ -32,6 +35,7 @@ const Form = ({ btnLabel, handleSubmit, clearInput = false }) => {
           </label>
           <div className="mt-2">
             <input
+              value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Email"
               id="email"
@@ -54,6 +58,7 @@ const Form = ({ btnLabel, handleSubmit, clearInput = false }) => {
           </div>
           <div className="mt-2">
             <input
+              value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Password"
               id="password"
@@ -82,6 +87,7 @@ const Form = ({ btnLabel, handleSubmit, clearInput = false }) => {
 Form.propTypes = {
   btnLabel: PropTypes.string,
   handleSubmit: PropTypes.func.isRequired,
-  clearInput: PropTypes.bool,
+  success: PropTypes.bool,
+  error: PropTypes.string,
 };
 export default Form;
