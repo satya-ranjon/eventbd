@@ -44,9 +44,11 @@ const HeroSection = () => {
             <span className="text-bg"> Social Events</span> With Us
           </h1>
           <p className=" text-zinc-400 my-3  text-sm xl:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
+            EventBD Events is the Best Event Management Company in Dhaka
+            Bangladesh. We are award-winning event planners in Bangladesh. We
+            have 15 years of experience in managing Social Events, Weddings,
+            Birthday Parties, Anniversaries, Engagement Parties, Retirement
+            Parties, Baby showers, and events in Bangladesh.
           </p>
           <div className="flex justify-center md:justify-start  items-center text-zinc-300 mt-10 gap-10 mb-10 md:-mb-0 text-center">
             <button
