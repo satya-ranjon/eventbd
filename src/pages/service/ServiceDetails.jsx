@@ -22,6 +22,10 @@ const ServiceDetails = () => {
             <span className=" text-[#21255d]"> Price : </span>
             <span className=" text-bg">{price}</span>
           </h2>
+          <div className="w-36">
+            <Button> Get Start </Button>
+          </div>
+
           <h1 className="text-[#21255d] text-center flex justify-center items-center gap-1 flex-col text-2xl font-semibold">
             <span> All that will be in this service</span>
             <span className="block h-[2px] mt-3 w-36 bg-[#73268e]"></span>

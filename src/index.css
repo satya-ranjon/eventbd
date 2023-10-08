@@ -1,9 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Libre+Baskerville&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 * {
   font-family: "Inter", sans-serif;
+}
+
+.text-bg {
+  background: linear-gradient(to right, #8328fa 34%, #d623fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-cb {
+  background-image: linear-gradient(
+    to right top,
+    #010e21,
+    #081c40,
+    #22255e,
+    #472a79,
+    #73268e
+  );
+}
+
+.bg-2cb {
+  background-image: linear-gradient(
+    to bottom,
+    #2a0529,
+    #260c30,
+    #1f1237,
+    #17173c,
+    #091c41
+  );
+}
+
+.logo-text {
+  font-family: "Permanent Marker", cursive;
+}
+
+.bg-slider {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff00,
+    #c0bfcc00,
+    #83839b82,
+    #20223db8,
+    #091c41
+  );
+}
+
+.bg-service {
+  background-image: linear-gradient(
+    to bottom,
+    #2a0529,
+    #260c30,
+    #1f1237,
+    #17173c,
+    #091c41
+  );
+}
+
+.custom1 {
+  grid-template-areas: "box1  box2 box2 box3 box3 box4 box4";
+}
+
+@media only screen and (max-width: 600px) {
+  .custom1 {
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4";
+  }
+}
+
+.custom2 {
+  grid-template-areas: "box4  box4 box3 box3 box2 box2 box1";
+}
+
+@media only screen and (max-width: 600px) {
+  .custom2 {
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4";
+  }
+}
+.bg-btn {
+  background-image: linear-gradient(210deg, #9733ee 0%, #da22ff 100%);
 }

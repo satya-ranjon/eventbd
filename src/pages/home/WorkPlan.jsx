@@ -13,9 +13,9 @@ const WorkPlan = () => {
             alt=""
             className=" w-full h-[300px] md:h-[500px] xl:h-[600px]"
           />
-          <div className=" absolute -bottom-20 -right-20 h-60 w-60 border-[20px] border-[#a100ff5c]">
+          {/* <div className=" absolute -bottom-20 -right-20 h-60 w-60 border-[20px] border-[#a100ff5c]">
             <img src={images.plan1} className=" h-full w-full" alt="" />
-          </div>
+          </div> */}
         </div>
         <div className="text-[#4b297b] mt-5 ">
           <div className="flex flex-col gap-2 items-center justify-center">

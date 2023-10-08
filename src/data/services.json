@@ -1,0 +1,668 @@
+[
+  {
+    "id": "FWjGtYQ",
+    "name": "Wedding Party Planning",
+    "img": "https://i.ibb.co/FWjGtYQ/pexels-rene-asmussen-10970559.jpg",
+    "price": "1500",
+    "description": [
+      {
+        "service_name": "Complete Wedding Planning",
+        "description": "Our comprehensive wedding planning service covers every aspect of your special day. From venue selection to guest coordination, we handle it all to create your dream wedding.",
+        "highlights": [
+          "Theme and decor planning",
+          "Vendor management",
+          "Budget tracking",
+          "Timeline and logistics coordination",
+          "Wedding day coordination"
+        ]
+      },
+      {
+        "service_name": "Partial Wedding Planning",
+        "description": "If you've already started planning but need assistance with specific aspects of your wedding, our partial planning service is perfect. We'll step in to ensure a seamless experience.",
+        "highlights": [
+          "Vendor coordination",
+          "Budget management",
+          "Logistics and timeline planning",
+          "Rehearsal dinner coordination",
+          "Wedding day coordination"
+        ]
+      },
+      {
+        "service_name": "Day-of Coordination",
+        "description": "For couples who have planned their wedding but want a professional to manage all the details on the big day. We'll ensure everything runs smoothly, allowing you to relax and enjoy.",
+        "highlights": [
+          "Final vendor coordination",
+          "Timeline execution",
+          "Guest assistance",
+          "Problem-solving",
+          "Emergency kit on hand"
+        ]
+      },
+      {
+        "service_name": "Venue Selection and Decor",
+        "description": "Let us help you find the perfect wedding venue that suits your style and budget. We'll also take care of decorating the space to match your chosen theme and vision.",
+        "highlights": [
+          "Venue scouting",
+          "Theme and decor planning",
+          "Floral arrangements",
+          "Lighting design",
+          "Table settings and centerpieces"
+        ]
+      },
+      {
+        "service_name": "Entertainment and Music",
+        "description": "Ensure your wedding guests have a fantastic time with our entertainment and music services. From live bands to DJs and dance performances, we'll create the right atmosphere.",
+        "highlights": [
+          "Live bands and musicians",
+          "Professional DJs",
+          "Dance performances",
+          "Interactive entertainment",
+          "Sound and lighting setup"
+        ]
+      },
+      {
+        "service_name": "Catering and Food Services",
+        "description": "Delight your guests with delicious cuisine tailored to your preferences. Our catering services provide a diverse menu, including dietary accommodations.",
+        "highlights": [
+          "Menu planning",
+          "Tasting sessions",
+          "Food stations and bars",
+          "Catering staff",
+          "Clean-up services"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5hsCs5N",
+    "name": "Birthday Party Planning",
+    "img": "https://i.ibb.co/5hsCs5N/pexels-rene-asmussen-1345574.jpg",
+    "price": "1100",
+    "description": [
+      {
+        "service_name": "Complete Birthday Party Planning",
+        "description": "Our comprehensive birthday party planning service takes care of all the details to create a memorable celebration. We handle everything from theme selection to entertainment and more.",
+        "highlights": [
+          "Customized party themes",
+          "Venue selection and decoration",
+          "Entertainment coordination",
+          "Catering and food services",
+          "Invitations and party favors"
+        ]
+      },
+      {
+        "service_name": "Themed Party Packages",
+        "description": "Choose from our pre-designed themed party packages, each tailored to a specific theme. These packages include everything you need for a fun and cohesive celebration.",
+        "highlights": [
+          "Themed decorations and supplies",
+          "Entertainment options",
+          "Catering packages",
+          "Invitations and party favors",
+          "Birthday cake and desserts"
+        ]
+      },
+      {
+        "service_name": "Customized Party Themes",
+        "description": "Work with our team to create a unique and personalized party theme that reflects your child's interests and style. We'll design and execute every aspect of the theme.",
+        "highlights": [
+          "Theme conceptualization",
+          "Custom decorations and props",
+          "Themed invitations and thank you cards",
+          "Games and activities tailored to the theme",
+          "Character appearances (if desired)"
+        ]
+      },
+      {
+        "service_name": "Entertainment and Activities",
+        "description": "Keep the guests entertained with a variety of activities and entertainment options. We offer age-appropriate games, magicians, face painting, and more.",
+        "highlights": [
+          "Professional entertainers",
+          "Interactive games and activities",
+          "Face painting and balloon twisting",
+          "Magic shows and puppetry",
+          "Photo booths and props"
+        ]
+      },
+      {
+        "service_name": "Catering and Food Services",
+        "description": "Ensure your guests are well-fed with our catering services. We provide a range of menu options, including kid-friendly choices and dietary accommodations.",
+        "highlights": [
+          "Menu planning and customization",
+          "Kid-friendly food options",
+          "Cake and dessert selection",
+          "Catering staff",
+          "Clean-up services"
+        ]
+      },
+      {
+        "service_name": "Photography and Videography",
+        "description": "Capture every precious moment of the birthday party with professional photography and videography services. Preserve the memories to cherish for years to come.",
+        "highlights": [
+          "High-resolution photography",
+          "Cinematic videography",
+          "Candid and posed shots",
+          "Photo albums and digital copies",
+          "Same-day editing (if requested)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0mT9X82",
+    "name": "Anniversary Party Planning",
+    "img": "https://i.ibb.co/0mT9X82/mitchell-orr-Ly-FIj-Xo-FY-unsplash.jpg",
+    "price": "1800",
+    "description": [
+      {
+        "service_name": "Complete Anniversary Party Planning",
+        "description": "Our comprehensive anniversary party planning service ensures a memorable celebration for your special milestone. From theme selection to venue decoration, we handle all the details.",
+        "highlights": [
+          "Customized anniversary themes",
+          "Venue selection and decoration",
+          "Entertainment coordination",
+          "Catering and food services",
+          "Invitations and party favors"
+        ]
+      },
+      {
+        "service_name": "Themed Anniversary Packages",
+        "description": "Choose from our pre-designed themed anniversary packages, each tailored to a specific theme. These packages include everything you need for a memorable celebration.",
+        "highlights": [
+          "Themed decorations and supplies",
+          "Entertainment options",
+          "Catering packages",
+          "Invitations and party favors",
+          "Anniversary cake and desserts"
+        ]
+      },
+      {
+        "service_name": "Customized Anniversary Themes",
+        "description": "Collaborate with our team to create a personalized anniversary theme that reflects your journey and love story. We'll design and execute every aspect of the theme.",
+        "highlights": [
+          "Theme conceptualization",
+          "Custom decorations and props",
+          "Themed invitations and thank you cards",
+          "Games and activities tailored to the theme",
+          "Live music and entertainment"
+        ]
+      },
+      {
+        "service_name": "Entertainment and Activities",
+        "description": "Keep your guests entertained with a variety of activities and entertainment options. We offer live music, DJ services, dance performances, and more.",
+        "highlights": [
+          "Live bands and musicians",
+          "Professional DJs",
+          "Dance performances",
+          "Interactive games and activities",
+          "Photo booths and props"
+        ]
+      },
+      {
+        "service_name": "Catering and Food Services",
+        "description": "Ensure your guests enjoy delicious cuisine with our catering services. We provide a range of menu options, including specialty dishes and dietary accommodations.",
+        "highlights": [
+          "Menu planning and customization",
+          "Specialty dishes and cocktails",
+          "Anniversary cake and dessert selection",
+          "Catering staff",
+          "Clean-up services"
+        ]
+      },
+      {
+        "service_name": "Photography and Videography",
+        "description": "Capture every precious moment of your anniversary celebration with professional photography and videography services. Preserve the memories to cherish for years to come.",
+        "highlights": [
+          "High-resolution photography",
+          "Cinematic videography",
+          "Candid and posed shots",
+          "Photo albums and digital copies",
+          "Same-day editing (if requested)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "NZhJd6D",
+    "name": "Graduation Party Planning",
+    "img": "https://i.ibb.co/NZhJd6D/pexels-pavel-danilyuk-7944136.jpg",
+    "price": "1300",
+    "description": [
+      {
+        "service_name": "Complete Graduation Party Planning",
+        "description": "Our comprehensive graduation party planning service takes care of every detail to ensure a memorable celebration for the graduate. From theme selection to venue decoration, we handle it all.",
+        "highlights": [
+          "Customized graduation themes",
+          "Venue selection and decoration",
+          "Entertainment coordination",
+          "Catering and food services",
+          "Invitations and party favors"
+        ]
+      },
+      {
+        "service_name": "Themed Graduation Packages",
+        "description": "Choose from our pre-designed themed graduation packages, each tailored to a specific theme. These packages include everything you need for a memorable celebration.",
+        "highlights": [
+          "Themed decorations and supplies",
+          "Entertainment options",
+          "Catering packages",
+          "Invitations and party favors",
+          "Graduation cake and desserts"
+        ]
+      },
+      {
+        "service_name": "Customized Graduation Themes",
+        "description": "Collaborate with our team to create a personalized graduation theme that reflects the graduate's achievements and future goals. We'll design and execute every aspect of the theme.",
+        "highlights": [
+          "Theme conceptualization",
+          "Custom decorations and props",
+          "Themed invitations and thank you cards",
+          "Games and activities tailored to the theme",
+          "Live music and entertainment"
+        ]
+      },
+      {
+        "service_name": "Entertainment and Activities",
+        "description": "Keep the guests entertained with a variety of activities and entertainment options. We offer live music, DJ services, interactive games, and more.",
+        "highlights": [
+          "Live bands and musicians",
+          "Professional DJs",
+          "Interactive games and activities",
+          "Photo booths and props",
+          "Karaoke and trivia"
+        ]
+      },
+      {
+        "service_name": "Catering and Food Services",
+        "description": "Ensure your guests enjoy delicious cuisine with our catering services. We provide a range of menu options, including buffet-style meals and dietary accommodations.",
+        "highlights": [
+          "Menu planning and customization",
+          "Buffet-style meals",
+          "Graduation cake and dessert selection",
+          "Catering staff",
+          "Clean-up services"
+        ]
+      },
+      {
+        "service_name": "Photography and Videography",
+        "description": "Capture every precious moment of the graduation celebration with professional photography and videography services. Preserve the memories to cherish for years to come.",
+        "highlights": [
+          "High-resolution photography",
+          "Cinematic videography",
+          "Candid and posed shots",
+          "Photo albums and digital copies",
+          "Same-day editing (if requested)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qmr1ZZS",
+    "name": "Shower Party Planning",
+    "img": "https://i.ibb.co/qmr1ZZS/pexels-tima-miroshnichenko-6463600.jpg",
+    "price": "1000",
+    "description": [
+      {
+        "service_name": "Complete Baby Shower Planning",
+        "description": "Our comprehensive baby shower planning service takes care of all the details to create a memorable celebration. We handle everything from theme selection to entertainment and more.",
+        "highlights": [
+          "Customized baby shower themes",
+          "Venue selection and decoration",
+          "Entertainment coordination",
+          "Catering and food services",
+          "Invitations and party favors"
+        ]
+      },
+      {
+        "service_name": "Themed Baby Shower Packages",
+        "description": "Choose from our pre-designed themed baby shower packages, each tailored to a specific theme. These packages include everything you need for a fun and cohesive celebration.",
+        "highlights": [
+          "Themed decorations and supplies",
+          "Entertainment options",
+          "Catering packages",
+          "Invitations and party favors",
+          "Baby shower cake and desserts"
+        ]
+      },
+      {
+        "service_name": "Customized Baby Shower Themes",
+        "description": "Collaborate with our team to create a unique and personalized baby shower theme that reflects the parents-to-be's interests and style. We'll design and execute every aspect of the theme.",
+        "highlights": [
+          "Theme conceptualization",
+          "Custom decorations and props",
+          "Themed invitations and thank you cards",
+          "Games and activities tailored to the theme",
+          "Baby shower gifts and prizes"
+        ]
+      },
+      {
+        "service_name": "Entertainment and Activities",
+        "description": "Keep the guests entertained with a variety of activities and entertainment options. We offer games, music, photo booths, and more to make the event special.",
+        "highlights": [
+          "Games and icebreakers",
+          "Live music and entertainment",
+          "Photo booths with props",
+          "DIY craft stations",
+          "Guest book and memory-making activities"
+        ]
+      },
+      {
+        "service_name": "Catering and Food Services",
+        "description": "Ensure your guests enjoy delicious cuisine with our catering services. We provide a range of menu options, including specialty dishes and dietary accommodations.",
+        "highlights": [
+          "Menu planning and customization",
+          "Specialty dishes and drinks",
+          "Baby shower cake and dessert selection",
+          "Catering staff",
+          "Clean-up services"
+        ]
+      },
+      {
+        "service_name": "Photography and Videography",
+        "description": "Capture every precious moment of the baby shower with professional photography and videography services. Preserve the memories to cherish for years to come.",
+        "highlights": [
+          "High-resolution photography",
+          "Cinematic videography",
+          "Candid and posed shots",
+          "Photo albums and digital copies",
+          "Same-day editing (if requested)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Z1w4g9N",
+    "name": "Engagement Party Planning",
+    "img": "https://i.ibb.co/Z1w4g9N/pexels-abir-shahriar-2102765.jpg",
+    "price": "1160",
+    "description": [
+      {
+        "service_name": "Complete Engagement Party Planning",
+        "description": "Our comprehensive engagement party planning service takes care of all the details to create a memorable celebration. From theme selection to venue decoration, we handle it all.",
+        "highlights": [
+          "Customized engagement party themes",
+          "Venue selection and decoration",
+          "Entertainment coordination",
+          "Catering and food services",
+          "Invitations and party favors"
+        ]
+      },
+      {
+        "service_name": "Themed Engagement Party Packages",
+        "description": "Choose from our pre-designed themed engagement party packages, each tailored to a specific theme. These packages include everything you need for a memorable celebration.",
+        "highlights": [
+          "Themed decorations and supplies",
+          "Entertainment options",
+          "Catering packages",
+          "Invitations and party favors",
+          "Engagement cake and desserts"
+        ]
+      },
+      {
+        "service_name": "Customized Engagement Party Themes",
+        "description": "Work with our team to create a personalized engagement party theme that reflects your love story and style. We'll design and execute every aspect of the theme.",
+        "highlights": [
+          "Theme conceptualization",
+          "Custom decorations and props",
+          "Themed invitations and thank you cards",
+          "Games and activities tailored to the theme",
+          "Live music and entertainment"
+        ]
+      },
+      {
+        "service_name": "Entertainment and Activities",
+        "description": "Keep your guests entertained with a variety of activities and entertainment options. We offer live music, DJ services, dance performances, and more.",
+        "highlights": [
+          "Live bands and musicians",
+          "Professional DJs",
+          "Dance performances",
+          "Interactive games and activities",
+          "Photo booths and props"
+        ]
+      },
+      {
+        "service_name": "Catering and Food Services",
+        "description": "Ensure your guests enjoy delicious cuisine with our catering services. We provide a range of menu options, including specialty dishes and dietary accommodations.",
+        "highlights": [
+          "Menu planning and customization",
+          "Specialty dishes and cocktails",
+          "Engagement cake and dessert selection",
+          "Catering staff",
+          "Clean-up services"
+        ]
+      },
+      {
+        "service_name": "Photography and Videography",
+        "description": "Capture every precious moment of your engagement celebration with professional photography and videography services. Preserve the memories to cherish for years to come.",
+        "highlights": [
+          "High-resolution photography",
+          "Cinematic videography",
+          "Candid and posed shots",
+          "Photo albums and digital copies",
+          "Same-day editing (if requested)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6BjrG7V",
+    "name": "Retirement Party Planning",
+    "img": "https://i.ibb.co/6BjrG7V/pexels-mark-angelo-sampan-1587927.jpg",
+    "price": "900",
+    "description": [
+      {
+        "service_name": "Complete Retirement Party Planning",
+        "description": "Our comprehensive retirement party planning service is designed to create a memorable and meaningful celebration for the retiree. From venue selection to entertainment, we handle all the details.",
+        "highlights": [
+          "Customized retirement party themes",
+          "Venue selection and decoration",
+          "Entertainment coordination",
+          "Catering and food services",
+          "Invitations and memorabilia"
+        ]
+      },
+      {
+        "service_name": "Themed Retirement Packages",
+        "description": "Choose from our pre-designed themed retirement packages, each tailored to a specific theme. These packages include everything you need for a heartfelt celebration.",
+        "highlights": [
+          "Themed decorations and supplies",
+          "Entertainment options",
+          "Catering packages",
+          "Invitations and personalized memorabilia",
+          "Retirement cake and desserts"
+        ]
+      },
+      {
+        "service_name": "Customized Retirement Themes",
+        "description": "Work with our team to create a personalized retirement theme that reflects the retiree's interests and career journey. We'll design and execute every aspect of the theme.",
+        "highlights": [
+          "Theme conceptualization",
+          "Custom decorations and memorabilia",
+          "Themed invitations and thank you cards",
+          "Speeches and toasts",
+          "Live music and entertainment"
+        ]
+      },
+      {
+        "service_name": "Entertainment and Activities",
+        "description": "Keep the guests entertained with a variety of activities and entertainment options. We offer live music, DJ services, retirement speeches, and more.",
+        "highlights": [
+          "Live bands and musicians",
+          "Professional DJs",
+          "Retirement speeches and toasts",
+          "Interactive games and activities",
+          "Photo booths and props"
+        ]
+      },
+      {
+        "service_name": "Catering and Food Services",
+        "description": "Ensure your guests enjoy delicious cuisine with our catering services. We provide a range of menu options, including specialty dishes and dietary accommodations.",
+        "highlights": [
+          "Menu planning and customization",
+          "Specialty dishes and cocktails",
+          "Retirement cake and dessert selection",
+          "Catering staff",
+          "Clean-up services"
+        ]
+      },
+      {
+        "service_name": "Photography and Videography",
+        "description": "Capture every precious moment of the retirement celebration with professional photography and videography services. Preserve the memories to cherish for years to come.",
+        "highlights": [
+          "High-resolution photography",
+          "Cinematic videography",
+          "Candid and posed shots",
+          "Photo albums and digital copies",
+          "Retirement party highlights reel"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "r31d90p",
+    "name": "Housewarming Party Planning",
+    "img": "https://i.ibb.co/r31d90p/pexels-ksenia-chernaya-3951652.jpg",
+    "price": "1800",
+    "description": [
+      {
+        "service_name": "Complete Housewarming Party Planning",
+        "description": "Our comprehensive housewarming party planning service takes care of all the details to create a memorable and stress-free celebration. From theme selection to venue decoration, we handle it all.",
+        "highlights": [
+          "Customized party themes",
+          "Venue selection and decoration",
+          "Entertainment coordination",
+          "Catering and food services",
+          "Invitations and party favors"
+        ]
+      },
+      {
+        "service_name": "Themed Housewarming Packages",
+        "description": "Choose from our pre-designed themed housewarming packages, each tailored to a specific theme. These packages include everything you need for a warm and welcoming celebration.",
+        "highlights": [
+          "Themed decorations and supplies",
+          "Entertainment options",
+          "Catering packages",
+          "Invitations and housewarming favors",
+          "Housewarming cake and desserts"
+        ]
+      },
+      {
+        "service_name": "Customized Housewarming Themes",
+        "description": "Collaborate with our team to create a personalized housewarming theme that reflects your new home and style. We'll design and execute every aspect of the theme.",
+        "highlights": [
+          "Theme conceptualization",
+          "Custom decorations and props",
+          "Themed invitations and thank you cards",
+          "Games and activities tailored to the theme",
+          "Live music and entertainment"
+        ]
+      },
+      {
+        "service_name": "Entertainment and Activities",
+        "description": "Keep your guests entertained with a variety of activities and entertainment options. We offer live music, DJ services, lawn games, and more.",
+        "highlights": [
+          "Live bands and musicians",
+          "Professional DJs",
+          "Lawn games and activities",
+          "Interactive entertainment",
+          "Photo booths and props"
+        ]
+      },
+      {
+        "service_name": "Catering and Food Services",
+        "description": "Ensure your guests enjoy delicious cuisine with our catering services. We provide a range of menu options, including specialty dishes and dietary accommodations.",
+        "highlights": [
+          "Menu planning and customization",
+          "Specialty dishes and cocktails",
+          "Housewarming cake and dessert selection",
+          "Catering staff",
+          "Clean-up services"
+        ]
+      },
+      {
+        "service_name": "Photography and Videography",
+        "description": "Capture every memorable moment of your housewarming party with professional photography and videography services. Preserve the memories to cherish for years to come.",
+        "highlights": [
+          "High-resolution photography",
+          "Cinematic videography",
+          "Candid and posed shots",
+          "Photo albums and digital copies",
+          "Same-day editing (if requested)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "QkkP4D8",
+    "name": "Reunion Party Planning",
+    "img": "https://i.ibb.co/QkkP4D8/pexels-askar-abayev-5638612.jpg",
+    "price": "1500",
+    "description": [
+      {
+        "service_name": "Complete Reunion Party Planning",
+        "description": "Our comprehensive reunion party planning service takes care of every aspect to create a memorable event. From venue selection to entertainment and more, we handle it all.",
+        "highlights": [
+          "Customized reunion themes",
+          "Venue selection and decoration",
+          "Entertainment coordination",
+          "Catering and food services",
+          "Invitations and memorabilia"
+        ]
+      },
+      {
+        "service_name": "Themed Reunion Packages",
+        "description": "Choose from our pre-designed themed reunion packages, each tailored to a specific theme. These packages include everything you need for a fun and cohesive celebration.",
+        "highlights": [
+          "Themed decorations and supplies",
+          "Entertainment options",
+          "Catering packages",
+          "Invitations and keepsakes",
+          "Memorable photo booths"
+        ]
+      },
+      {
+        "service_name": "Customized Reunion Themes",
+        "description": "Collaborate with our team to create a personalized reunion theme that reflects your group's history and shared experiences. We'll design and execute every aspect of the theme.",
+        "highlights": [
+          "Theme conceptualization",
+          "Custom decorations and props",
+          "Themed invitations and memorabilia",
+          "Games and activities tailored to the theme",
+          "Live music and entertainment"
+        ]
+      },
+      {
+        "service_name": "Entertainment and Activities",
+        "description": "Keep your reunion attendees entertained with a variety of activities and entertainment options. We offer live music, DJ services, games, and more.",
+        "highlights": [
+          "Live bands and musicians",
+          "Professional DJs",
+          "Games and contests",
+          "Interactive activities",
+          "Photo booths and keepsake photos"
+        ]
+      },
+      {
+        "service_name": "Catering and Food Services",
+        "description": "Ensure your reunion attendees are well-fed with our catering services. We provide a range of menu options, including special dishes and dietary accommodations.",
+        "highlights": [
+          "Menu planning and customization",
+          "Specialty dishes and drinks",
+          "Dessert and snack options",
+          "Catering staff",
+          "Clean-up services"
+        ]
+      },
+      {
+        "service_name": "Photography and Videography",
+        "description": "Capture every moment of your reunion with professional photography and videography services. Preserve the memories to cherish for years to come.",
+        "highlights": [
+          "High-resolution photography",
+          "Cinematic videography",
+          "Candid and posed shots",
+          "Memorable group photos",
+          "Digital copies and albums"
+        ]
+      }
+    ]
+  }
+]

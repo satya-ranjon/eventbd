@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Wedding Party",
+    "img": "https://i.ibb.co/xGTByM1/2.jpg",
+    "date": "11 October 2023",
+    "location ": "Level -7, K Complex, 19 Green Road Dhaka",
+    "time": "15.00 P.M. - Till Drop",
+    "category": "Wedding"
+  },
+  {
+    "id": "2",
+    "name": "Birthday Party",
+    "img": "https://i.ibb.co/bQR7Mzs/3.jpg",
+    "date": "14 October 2023",
+    "location ": "BD-Road Lalbag Rangpur",
+    "time": "15.00 P.M. - Till Drop",
+    "category": "Birthday"
+  },
+  {
+    "id": "3",
+    "name": "Anniversary Party",
+    "img": "https://i.ibb.co/9pfkH8z/1.jpg",
+    "date": "15 October 2023",
+    "location ": "19 Green Road Dhaka",
+    "time": "15.00 P.M. - Till Drop",
+    "category": "Anniversary"
+  },
+  {
+    "id": "4",
+    "name": "Graduation Party",
+    "img": "https://i.ibb.co/jgJwJLG/4.jpg",
+    "date": "16 October 2023",
+    "location ": "Level -7, K Complex Rangpur",
+    "time": "15.00 P.M. - Till Drop",
+    "category": "Graduation"
+  }
+]

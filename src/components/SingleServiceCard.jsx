@@ -59,8 +59,8 @@ const SingleServiceCard = ({ service }) => {
 
       <Link
         to={`/service/${id}`}
-        className=" font-semibold text-lg my-3 flex justify-start gap-3 items-center text-bg">
-        Read More .....
+        className=" font-semibold text-lg my-3 flex justify-start gap-3 items-center ">
+        <span className="text-bg">Read More .....</span>
       </Link>
     </div>
   );

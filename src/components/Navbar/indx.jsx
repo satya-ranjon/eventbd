@@ -89,7 +89,7 @@ const Navbar = () => {
                   key={item.link}
                   to={item.link}
                   className={({ isActive }) =>
-                    `${isActive && " text-bg"} font-semibold text-xl`
+                    `${isActive && "text-bg"} font-semibold text-xl`
                   }>
                   {item.label}
                 </NavLink>
