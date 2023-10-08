@@ -8,6 +8,8 @@ import Registration from "../pages/auth/Registration";
 import { getService } from "../fetch";
 import Services from "../pages/service/Services";
 import PrivateRoutes from "./PrivateRoutes";
+import Contact from "../pages/contact/Contact";
+import PublicRoutes from "./PublicRoutes";
 
 const router = createBrowserRouter([
   {
@@ -33,12 +35,28 @@ const router = createBrowserRouter([
         loader: ({ params }) => getService(params.id),
       },
       {
+        path: "/contact",
+        element: (
+          <PrivateRoutes>
+            <Contact />
+          </PrivateRoutes>
+        ),
+      },
+      {
         path: "/login",
-        element: <Login />,
+        element: (
+          <PublicRoutes>
+            <Login />
+          </PublicRoutes>
+        ),
       },
       {
         path: "/registration",
-        element: <Registration />,
+        element: (
+          <PublicRoutes>
+            <Registration />
+          </PublicRoutes>
+        ),
       },
     ],
   },

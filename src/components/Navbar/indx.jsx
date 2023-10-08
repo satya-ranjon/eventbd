@@ -9,6 +9,7 @@ const menu = [
   { link: "/", label: "Home" },
   { link: "/services", label: "Services" },
   { link: "/about", label: "About Us" },
+  { link: "/contact", label: "Contact" },
 ];
 
 const Navbar = () => {
