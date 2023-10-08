@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   useLayoutEffect(() => {
-    if (windowWidth > 600) {
+    if (windowWidth > 768) {
       setIsOpen(true);
     }
   });
@@ -37,7 +37,7 @@ const Navbar = () => {
     <div
       className={`${pathname === "/" && "fixed top-0 left-0 right-0"} w-full ${
         scrollY > 30 && pathname === "/" && "bg-2cb z-10"
-      } ${pathname != "/" && "bg-2cb"}`}>
+      } ${pathname != "/" && "bg-2cb"} z-10`}>
       <div className="px-5 xl:px-0 ">
         <div className="flex justify-between items-center container mx-auto py-10 text-white">
           {/* // Logo */}
@@ -51,7 +51,7 @@ const Navbar = () => {
           </div>
 
           {isOpen ? (
-            <button className="md:hidden" onClick={handleNavbar}>
+            <button className="lg:hidden" onClick={handleNavbar}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -67,7 +67,7 @@ const Navbar = () => {
               </svg>
             </button>
           ) : (
-            <button className="md:hidden" onClick={handleNavbar}>
+            <button className="lg:hidden" onClick={handleNavbar}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -87,12 +87,12 @@ const Navbar = () => {
           {isOpen && (
             <div
               className={`${
-                windowWidth < 600 &&
-                "absolute top-24 left-0   flex-col w-full bg-[#20245c] p-3  justify-start items-center"
+                windowWidth < 770 &&
+                "absolute top-24 left-0 z-10  flex-col w-full bg-[#20245c] p-3  justify-start items-center"
               } gap-5 flex z-10 items-center`}>
               {menu.map((item) => (
                 <NavLink
-                  onClick={windowWidth < 600 && handleNavbar}
+                  onClick={windowWidth < 770 && handleNavbar}
                   key={item.link}
                   to={item.link}
                   className={({ isActive }) =>
