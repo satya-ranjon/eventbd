@@ -19,7 +19,7 @@ const WorkPlan = () => {
         </div>
         <div className="text-[#4b297b] mt-5 ">
           <div className="flex flex-col gap-2 items-center justify-center">
-            <h1 className="text-bg text-center logo-text text-6xl font-semibold  ">
+            <h1 className="text-bg text-center logo-text text-4xl lg:text-6xl font-semibold  ">
               How it Work
             </h1>
             <span className="block h-[2px] mt-3 w-56 bg-[#73268e]"></span>

@@ -3,6 +3,7 @@ import AllServices from "../../components/AllServices";
 import Button from "../../components/Button";
 import HeroSection from "./HeroSection";
 import WorkPlan from "./WorkPlan";
+import UpcomingEvents from "./UpcomingEvents";
 
 const Home = () => {
   return (
@@ -18,6 +19,8 @@ const Home = () => {
       </div>
       {/* Work planning Section */}
       <WorkPlan />
+      {/* Upcoming Event Activities */}
+      <UpcomingEvents />
     </div>
   );
 };
