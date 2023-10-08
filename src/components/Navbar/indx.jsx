@@ -8,8 +8,8 @@ import useAuthentication from "../../hooks/useAuthentication";
 const menu = [
   { link: "/", label: "Home" },
   { link: "/services", label: "Services" },
-  { link: "/about", label: "About Us" },
   { link: "/contact", label: "Contact" },
+  { link: "/team", label: "Our Team" },
 ];
 
 const Navbar = () => {

@@ -10,6 +10,7 @@ import Services from "../pages/service/Services";
 import PrivateRoutes from "./PrivateRoutes";
 import Contact from "../pages/contact/Contact";
 import PublicRoutes from "./PublicRoutes";
+import Team from "../pages/team/Team";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoutes>
             <Contact />
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/team",
+        element: (
+          <PrivateRoutes>
+            <Team />
           </PrivateRoutes>
         ),
       },
