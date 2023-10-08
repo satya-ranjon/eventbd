@@ -18,11 +18,9 @@ const Login = () => {
         setError(null);
         setSuccess(true);
         toast.success("You Have Successfully Login!");
-        console.log(result);
       })
       .catch((error) => {
         setError("Your email and password doesn't match");
-        console.log(error);
       });
   };
   return (

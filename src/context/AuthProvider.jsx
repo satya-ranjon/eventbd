@@ -33,13 +33,13 @@ const AuthProvider = ({ children }) => {
     return signInWithPopup(auth, googleProvider);
   };
 
-  const logOut = () => {
+  const logoutUser = () => {
     return signOut(auth);
   };
 
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (user) => {
-      setUser(user.providerData[0]);
+      setUser(user?.providerData[0]);
       setLoading(false);
     });
     return () => {
@@ -51,7 +51,7 @@ const AuthProvider = ({ children }) => {
     <AuthContext.Provider
       value={{
         loginGoogle,
-        logOut,
+        logoutUser,
         user,
         loading,
         login,

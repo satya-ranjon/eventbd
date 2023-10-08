@@ -7,7 +7,6 @@ const SocialLogin = () => {
   const handleSocialLogin = () => {
     loginGoogle()
       .then((res) => {
-        console.log(res);
         toast.success("User logged in successfully");
       })
       .catch((error) => {

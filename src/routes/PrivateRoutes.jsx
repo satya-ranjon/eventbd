@@ -3,7 +3,6 @@ import { Navigate } from "react-router-dom";
 
 const PrivateRoutes = ({ children }) => {
   const { user, loading } = useAuthentication();
-
   if (loading)
     return (
       <h1 className=" h-screen w-full flex justify-center items-center bg-[]">

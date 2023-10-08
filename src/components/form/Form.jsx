@@ -13,7 +13,6 @@ const Form = ({ btnLabel, handleSubmit, success = false, error }) => {
 
   useEffect(() => {
     if (success) {
-      console.log(success);
       setEmail("");
       setPassword("");
     }

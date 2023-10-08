@@ -2,17 +2,23 @@ import { images } from "../../constant";
 import { NavLink, useLocation } from "react-router-dom";
 import useDisplay from "../../hooks/useDisplay";
 import { useLayoutEffect, useState } from "react";
+import Button from "../Button";
+import useAuthentication from "../../hooks/useAuthentication";
 
 const menu = [
   { link: "/", label: "Home" },
   { link: "/services", label: "Services" },
   { link: "/about", label: "About Us" },
-  { link: "/login", label: "Login" },
 ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [windowWidth, scrollY] = useDisplay();
+  const { user, logoutUser, loading } = useAuthentication();
+
+  const handleLogout = () => {
+    logoutUser();
+  };
 
   useLayoutEffect(() => {
     if (windowWidth > 600) {
@@ -81,8 +87,8 @@ const Navbar = () => {
             <div
               className={`${
                 windowWidth < 600 &&
-                "absolute top-24 left-0   flex-col w-full bg-[#20245c] p-3  justify-start items-center "
-              } gap-5 flex z-10`}>
+                "absolute top-24 left-0   flex-col w-full bg-[#20245c] p-3  justify-start items-center"
+              } gap-5 flex z-10 items-center`}>
               {menu.map((item) => (
                 <NavLink
                   onClick={windowWidth < 600 && handleNavbar}
@@ -94,6 +100,35 @@ const Navbar = () => {
                   {item.label}
                 </NavLink>
               ))}
+
+              {user && !user.photoURL && !loading && (
+                <div className="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                  <span className="font-medium text-gray-600 dark:text-gray-300">
+                    {user?.email?.slice(0, 2)}
+                  </span>
+                </div>
+              )}
+              {user?.photoURL && !loading && (
+                <img
+                  className="inline-block h-8 w-8 rounded-full ring-2 ring-white"
+                  src={user.photoURL}
+                  alt="photo"
+                />
+              )}
+              {user?.displayName && !loading && <h1>{user.displayName}</h1>}
+              {user && !loading && (
+                <Button onClick={handleLogout}>Logout</Button>
+              )}
+              {!user && (
+                <NavLink
+                  onClick={windowWidth < 600 && handleNavbar}
+                  to="/login"
+                  className={({ isActive }) =>
+                    `${isActive && "text-bg"} font-semibold text-xl`
+                  }>
+                  Login
+                </NavLink>
+              )}
             </div>
           )}
         </div>

@@ -33,7 +33,6 @@ const Registration = () => {
         setError(null);
         setSuccess(true);
         toast.success("Your Account Create Successfully");
-        console.log(result);
       })
       .catch((error) => {
         setError(error.code);
