@@ -1,8 +1,10 @@
 import useAuthentication from "../hooks/useAuthentication";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
 const PrivateRoutes = ({ children }) => {
   const { user, loading } = useAuthentication();
+  const { pathname } = useLocation();
+
   if (loading)
     return (
       <h1 className=" h-screen w-full flex justify-center items-center bg-[]">
@@ -28,7 +30,7 @@ const PrivateRoutes = ({ children }) => {
     );
 
   if (!user?.email) {
-    return <Navigate to="/login" />;
+    return <Navigate state={pathname} to="/login" />;
   }
   return children;
 };

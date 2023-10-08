@@ -1,20 +1,27 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import SocialLogin from "./SocialLogin";
+import { useLocation } from "react-router-dom";
 
 const Form = ({ btnLabel, handleSubmit, success = false, error }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+  const [url, setUrl] = useState("");
+
+  const { pathname } = useLocation();
 
   const handleFormData = (e) => {
     e.preventDefault();
-    handleSubmit({ email, password });
+    handleSubmit({ email, password, name, url });
   };
 
   useEffect(() => {
     if (success) {
       setEmail("");
       setPassword("");
+      setName("");
+      setUrl("");
     }
   }, [success]);
   return (
@@ -26,6 +33,46 @@ const Form = ({ btnLabel, handleSubmit, success = false, error }) => {
         className="space-y-6"
         action="#"
         method="POST">
+        {pathname == "/registration" && (
+          <>
+            <div>
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium leading-6 text-gray-900">
+                Name ( Optional )
+              </label>
+              <div className="mt-2">
+                <input
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Name"
+                  id="name"
+                  type="text"
+                  className=" px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-100 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label
+                htmlFor="urlimg"
+                className="block text-sm font-medium leading-6 text-gray-900">
+                Img Url ( Optional )
+              </label>
+              <div className="mt-2">
+                <input
+                  value={url}
+                  onChange={(e) => setUrl(e.target.value)}
+                  placeholder="Image Url"
+                  id="urlimg"
+                  type="url"
+                  className=" px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-100 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+          </>
+        )}
+
         <div>
           <label
             htmlFor="email"

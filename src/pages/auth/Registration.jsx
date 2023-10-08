@@ -8,10 +8,10 @@ import toast from "react-hot-toast";
 const Registration = () => {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
-  const { registration } = useAuthentication();
+  const { registration, updateUserProfile } = useAuthentication();
 
   const handleSubmit = (data) => {
-    const { email, password } = data;
+    const { email, password, name, url } = data;
     setError(null);
 
     if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(email)) {
@@ -31,6 +31,10 @@ const Registration = () => {
     registration(email, password)
       .then((result) => {
         setError(null);
+
+        if (name || url) {
+          updateUserProfile(name, url);
+        }
         setSuccess(true);
         toast.success("Your Account Create Successfully");
       })

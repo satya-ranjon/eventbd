@@ -1,10 +1,12 @@
 import useAuthentication from "../hooks/useAuthentication";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
 const PublicRoutes = ({ children }) => {
   const { user } = useAuthentication();
+  const { state } = useLocation();
+
   if (user) {
-    return <Navigate to="/" />;
+    return <Navigate to={state ? state : "/"} />;
   }
   return children;
 };
