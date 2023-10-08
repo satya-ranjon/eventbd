@@ -18,7 +18,7 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: A: `{}`
+#### Answer: A : `{}`
 
 **_Write your explanation here:_**
 
