@@ -9,7 +9,7 @@ const AllServices = ({ show, label }) => {
 
   const showServices = show ? (windowWidth > 1450 ? show : 6) : services.length;
   return (
-    <>
+    <div>
       <h1 className="text-center text-4xl xl:text-5xl 2xl:text-6xl font-bold text-[#21255d]">
         {label && (
           <div className="flex flex-col gap-2 justify-center items-center">
@@ -23,7 +23,7 @@ const AllServices = ({ show, label }) => {
           <SingleServiceCard service={item} key={i} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

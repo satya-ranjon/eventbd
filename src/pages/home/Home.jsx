@@ -4,6 +4,9 @@ import Button from "../../components/Button";
 import HeroSection from "./HeroSection";
 import WorkPlan from "./WorkPlan";
 import UpcomingEvents from "./UpcomingEvents";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Home = () => {
   return (

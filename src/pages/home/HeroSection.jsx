@@ -38,7 +38,9 @@ const HeroSection = () => {
   return (
     <div className=" bg-cb md:h-screen w-full flex  items-center px-5 xl:px-0 py-20 md:py-0 pt-36 md:pt-0">
       <div className=" container mx-auto flex flex-col md:flex-row justify-between items-center ">
-        <div className="md:w-[450px] xl:w-[550px] 2xl:w-[650px]">
+        <div
+          data-aos="fade-right"
+          className="md:w-[450px] xl:w-[550px] 2xl:w-[650px]">
           <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white ">
             Let's Celebrate Your
             <span className="text-bg"> Social Events</span> With Us
@@ -90,7 +92,9 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className=" flex justify-start items-center gap-5">
+        <div
+          data-aos="fade-end"
+          className=" flex justify-start items-center gap-5">
           {slider
             .slice(activeSlide.start, activeSlide.end)
             ?.map((slide, index) => (

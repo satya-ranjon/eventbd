@@ -6,8 +6,10 @@ import { MdDisplaySettings } from "react-icons/md";
 const WorkPlan = () => {
   return (
     <div className=" container mx-auto px-5 2xl:px-0 mt-10 mb-20">
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-24">
-        <div className="border-[20px] border-[#a100ff21] relative">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-24 ">
+        <div
+          data-aos="fade-right"
+          className="border-[20px] border-[#a100ff21] relative">
           <img
             src={images.plan}
             alt=""
@@ -17,7 +19,7 @@ const WorkPlan = () => {
             <img src={images.plan1} className=" h-full w-full" alt="" />
           </div> */}
         </div>
-        <div className="text-[#4b297b] mt-5 ">
+        <div data-aos="fade-left" className="text-[#4b297b] mt-5 ">
           <div className="flex flex-col gap-2 items-center justify-center">
             <h1 className="text-bg text-center logo-text text-4xl lg:text-6xl font-semibold  ">
               How it Work

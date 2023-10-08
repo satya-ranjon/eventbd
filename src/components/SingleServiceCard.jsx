@@ -7,7 +7,11 @@ const SingleServiceCard = ({ service }) => {
   const { pathname } = useLocation();
 
   return (
-    <div className=" rounded-xl overflow-hidden" key={id}>
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      className=" rounded-xl overflow-hidden"
+      key={id}>
       <div className="relative">
         <img
           src={img}
