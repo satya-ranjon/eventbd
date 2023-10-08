@@ -1,14 +1,52 @@
 import { Link } from "react-router-dom";
 import Form from "../../components/form/Form";
 import Layout from "./Layout";
+import useAuthentication from "../../hooks/useAuthentication";
+import { useState } from "react";
+import toast from "react-hot-toast";
 
 const Registration = () => {
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(false);
+  const { registration } = useAuthentication();
+
   const handleSubmit = (data) => {
-    console.log(data);
+    const { email, password } = data;
+    setError(null);
+
+    if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(email)) {
+      setError("Provide valid email");
+      return;
+    } else if (password.length < 6) {
+      setError("password is less than 6 characters");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      setError("password doesn't have a capital letter");
+      return;
+    } else if (!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\\-]/.test(password)) {
+      setError("password don't have a special character");
+      return;
+    }
+
+    registration(email, password)
+      .then((result) => {
+        setError(null);
+        setSuccess(true);
+        toast.success("Your Account Create Successfully");
+        console.log(result);
+      })
+      .catch((error) => {
+        setError(error.code);
+      });
   };
   return (
     <Layout title="Create your account ">
-      <Form btnLabel="Registration" handleSubmit={handleSubmit} />
+      <Form
+        btnLabel="Registration"
+        handleSubmit={handleSubmit}
+        success={success}
+        error={error}
+      />
       <p className="mt-10 text-center text-sm text-gray-500">
         If have an account...
         <Link
