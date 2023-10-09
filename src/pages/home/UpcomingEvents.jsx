@@ -11,7 +11,8 @@ const UpcomingEvents = () => {
       <div className="">
         {events.map((event, index) => (
           <div
-            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
             className={` grid gap-2 md:gap-12 my-14 ${
               index % 2 === 0 ? "custom1" : "custom2"
             }`}
